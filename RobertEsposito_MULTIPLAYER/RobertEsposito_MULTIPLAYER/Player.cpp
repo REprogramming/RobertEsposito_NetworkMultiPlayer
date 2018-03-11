@@ -13,6 +13,9 @@ Player::~Player()
 	//dtor
 };
 
+RakNet::SystemAddress g_serverAddress;
+RakNet::RakPeerInterface *g_rakPeerInterface = nullptr;
+
 void Player::createPlayer()
 {
 	int selection = 0;
@@ -108,3 +111,4 @@ void Player::checkStats()
 	std::cout << "Attack Power: " << this->attackPower << std::endl;
 	std::cout << "Health: " << this->health << std::endl;
 }
+

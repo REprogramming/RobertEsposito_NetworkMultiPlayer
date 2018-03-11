@@ -3,6 +3,9 @@
 #define PLAYER_H
 
 
+#include "MessageIdentifiers.h"
+#include "RakPeerInterface.h"
+#include "BitStream.h"
 
 #include<iostream>
 #include<string>
@@ -29,6 +32,7 @@ public:
 	void defend();
 	void checkStats();
 	void doTurn();
+	
 
 
 protected:
